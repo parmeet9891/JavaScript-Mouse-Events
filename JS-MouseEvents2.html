@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JavaScript Mouse Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+           function myfunction(e)
+           {
+                 x = e.clientX;
+                 y = e.clientY;
+                coordinates = "Coordinates(" + x + "," + y +")";
+                document.getElementById("demo").innerHTML = coordinates;
+           }
+           function clear()
+           {
+               document.getElementById("demo").innerHTML = "";
+           }
+        </script>
+    </head>
+    <body>
+        <div id="box" style="width: 150px; height: 150px; border: 1px solid" onmousemove="myfunction(event)" onmouseout="clear()">Hover the Mouse Inside</div>
+        <p id="demo"></p>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function myfunction()
+            {
+                 var x = document.getElementById("name");
+                 x.value = x.value.toUpperCase();
+            }
+            function myfunction1(element)
+            {
+                element.style.background = "yellow";
+            }
+            function myfunction2()
+            {
+                document.getElementById("demo").innerHTML = "You selected some text";
+            }
+            function message()
+            {
+                alert("Resetting has been done!");
+            }
+            function myfunction3()
+            {
+                alert("You pressed a key!");
+            }
+            </script>
+    </head>
+    <body>
+        <p> JavaScript onchange Event! Enter any text and it will convert it into uppercase, When you left the text.<br>
+            Enter your name: <input type="text" id="name" onchange="myfunction()"/>
+        </p><br><br>
+        <p>
+            JavaScript onfocus event! Select the text and clor changes!<br>
+            Enter your name: <input type="text" id="name1" onfocus="myfunction1(this)"/>
+        </p><br><br>
+        <p>
+            JavaScript onselect event! Select some text and it will alert you!<br>
+            Some Text : <input type="text" value="Hello!" id="select" onselect="myfunction2()"/> 
+        <p id="demo"></p>
+    </p><br><br>
+    <p>
+    <form onreset="message()">
+        Enter your name: <input type="text" name="newname"/>
+        <input type="reset"/>
+    </form>
+</p><br><br>
+    <p>
+        A function is triggered when a user presses a key inside the text box: <input type="text" onkeydown = "myfunction3()"/>
+    </p>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JavaScript, Mouse Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function myfunction(element,color)
+            {
+                element.style.color = color;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 onmouseover = "style.color = 'red'" onmouseout="style.color = 'black'">HELLO, THIS IS JAVASCRIPT MOUSE EVENT</h1><br><br>
+        <h2 onmousedown = "myfunction(this,'red')" onmouseup="myfunction(this,'green')">Click on the text. This is the property that till the mouse is pressed the color changes and when it is released the color changes.</h2>
+    </body>
+</html>
